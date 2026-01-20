@@ -1,4 +1,4 @@
-** Some custom extensions for Filament Tiptap
+# Some custom extensions for Filament Tiptap
 
 ## Introduction
 
@@ -9,17 +9,17 @@ This package provides extensions for the `awcodes/filament-tiptap-editor` packag
 First, install this package via the Composer package manager:
 
 ```bash
-composer require codedor/filament-custom-tiptap-extensions
+composer require wotz/filament-custom-tiptap-extensions
 ```
 
 ## LinkPicker Plugin
 
-This provides a custom Tiptap plugin that allows you to pick links via our [link picker](https://github.com/codedor/filament-link-picker) package.
+This provides a custom Tiptap plugin that allows you to pick links via our [link picker](https://github.com/wotzebra/filament-link-picker) package.
 
 If you want to enable this plugin for each RichEditor, you can do this by adding the following code to your Filament service provider:
 
 ```php
-use Codedor\FilamentCustomTiptapExtensions\Plugins\LinkPickerRichContentPlugin;
+use Wotz\FilamentCustomTiptapExtensions\Plugins\LinkPickerRichContentPlugin;
 use Filament\Forms\Components\RichEditor;
 
 RichEditor::configureUsing(function (RichEditor $editor) {

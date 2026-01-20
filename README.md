@@ -7,13 +7,13 @@ This package provides extensions for the `awcodes/filament-tiptap-editor` packag
 You can install the package via composer:
 
 ```bash
-composer require codedor/filament-custom-tiptap-extensions
+composer require wotz/filament-custom-tiptap-extensions
 ```
 
 ## Usage
 
 ```php
-use Codedor\FilamentCustomTiptapExtensions\Plugins\LinkPickerRichContentPlugin;
+use Wotz\FilamentCustomTiptapExtensions\Plugins\LinkPickerRichContentPlugin;
 use Filament\Forms\Components\RichEditor;
 
 RichEditor::make('description')
@@ -51,7 +51,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover any security-related issues, please email info@codedor.be instead of using the issue tracker.
+If you discover any security-related issues, please email info@whoownsthezebra.be instead of using the issue tracker.
 
 ## License
 
