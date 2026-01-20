@@ -1,8 +1,7 @@
 <?php
 
-namespace Codedor\FilamentCustomTiptapExtensions\Plugins;
+namespace Wotz\FilamentCustomTiptapExtensions\Plugins;
 
-use Codedor\LinkPicker\Filament\LinkPickerInput;
 use Filament\Actions\Action;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\RichEditor\EditorCommand;
@@ -13,6 +12,7 @@ use Filament\Support\Icons\Heroicon;
 use Illuminate\Support\Str;
 use Tiptap\Core\Extension;
 use Tiptap\Marks\Link;
+use Wotz\LinkPicker\Filament\LinkPickerInput;
 
 class LinkPickerRichContentPlugin implements RichContentPlugin
 {

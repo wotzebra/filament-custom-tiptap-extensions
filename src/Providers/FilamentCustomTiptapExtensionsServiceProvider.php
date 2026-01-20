@@ -1,6 +1,6 @@
 <?php
 
-namespace Codedor\FilamentCustomTiptapExtensions\Providers;
+namespace Wotz\FilamentCustomTiptapExtensions\Providers;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
