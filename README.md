@@ -7,40 +7,24 @@ This package provides extensions for the `awcodes/filament-tiptap-editor` packag
 You can install the package via composer:
 
 ```bash
-composer require codedor/filament-custom-tiptap-extensions
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-custom-tiptap-extensions-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-custom-tiptap-extensions-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-custom-tiptap-extensions-views"
+composer require wotz/filament-custom-tiptap-extensions
 ```
 
 ## Usage
 
 ```php
-$filamentCustomTiptapExtensions = new Codedor\FilamentCustomTiptapExtensions();
-echo $filamentCustomTiptapExtensions->echoPhrase('Hello, Codedor!');
+use Wotz\FilamentCustomTiptapExtensions\Plugins\LinkPickerRichContentPlugin;
+use Filament\Forms\Components\RichEditor;
+
+RichEditor::make('description')
+    ->toolbarButtons([
+        [
+            'linkPicker',
+        ],
+    ])
+    ->plugins([
+        LinkPickerRichContentPlugin::make(),
+    ]);
 ```
 
 ## Documentation
@@ -67,7 +51,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover any security-related issues, please email info@codedor.be instead of using the issue tracker.
+If you discover any security-related issues, please email info@whoownsthezebra.be instead of using the issue tracker.
 
 ## License
 
