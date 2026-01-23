@@ -13,6 +13,7 @@
     },
     "require": {
         "php": "^8.2",
+        "codeat3/blade-carbon-icons": "^2.38",
         "filament/filament": "^4.0|^5.0",
         "illuminate/contracts": "^11.0|^12.0",
         "spatie/laravel-package-tools": "^1.12",
