@@ -2,6 +2,8 @@
 
 namespace Wotz\FilamentCustomTiptapExtensions\Providers;
 
+use Filament\Support\Assets\Js;
+use Filament\Support\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -12,5 +14,15 @@ class FilamentCustomTiptapExtensionsServiceProvider extends PackageServiceProvid
         $package
             ->name('filament-custom-tiptap-extensions')
             ->setBasePath(__DIR__ . '/../');
+    }
+
+    public function packageBooted()
+    {
+        FilamentAsset::register([
+            Js::make(
+                id: 'rich-content-plugins/checked-list',
+                path: __DIR__ . '/../../resources/dist/checked-list.js'
+            )->loadedOnRequest(),
+        ]);
     }
 }

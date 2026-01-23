@@ -1,0 +1,17 @@
+ul.checked-list {
+    list-style-type: none;
+    margin-inline-start: 0;
+}
+
+ul.checked-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.375em;
+}
+
+ul.checked-list li::before {
+    content: '✓';
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}

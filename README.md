@@ -13,17 +13,19 @@ composer require wotz/filament-custom-tiptap-extensions
 ## Usage
 
 ```php
-use Wotz\FilamentCustomTiptapExtensions\Plugins\LinkPickerRichContentPlugin;
+use Wotz\FilamentCustomTiptapExtensions\Plugins\CheckedListPlugin;use Wotz\FilamentCustomTiptapExtensions\Plugins\LinkPickerRichContentPlugin;
 use Filament\Forms\Components\RichEditor;
 
 RichEditor::make('description')
     ->toolbarButtons([
         [
-            'linkPicker',
+            'linkPicker', 
+            'checkedList',
         ],
     ])
     ->plugins([
         LinkPickerRichContentPlugin::make(),
+        CheckedListPlugin::make(),
     ]);
 ```
 
