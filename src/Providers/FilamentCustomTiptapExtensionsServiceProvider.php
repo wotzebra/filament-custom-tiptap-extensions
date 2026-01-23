@@ -21,7 +21,7 @@ class FilamentCustomTiptapExtensionsServiceProvider extends PackageServiceProvid
         FilamentAsset::register([
             Js::make(
                 id: 'rich-content-plugins/checked-list',
-                path: __DIR__ . '/../../resources/dist/filament/rich-content-plugins/checked-list.js'
+                path: __DIR__ . '/../../resources/dist/checked-list.js'
             )->loadedOnRequest(),
         ]);
     }
