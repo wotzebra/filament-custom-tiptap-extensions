@@ -18,12 +18,10 @@ class FilamentCustomTiptapExtensionsServiceProvider extends PackageServiceProvid
 
     public function packageBooted()
     {
-        $dist = __DIR__ . '/../../resources/js';
-
         FilamentAsset::register([
             Js::make(
                 id: 'rich-content-plugins/checked-list',
-                path: __DIR__.'/../../resources/js/dist/filament/rich-content-plugins/checked-list.js'
+                path: __DIR__ . '/../../resources/dist/filament/rich-content-plugins/checked-list.js'
             )->loadedOnRequest(),
         ]);
     }
