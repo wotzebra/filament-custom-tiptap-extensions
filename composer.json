@@ -12,18 +12,18 @@
         "email": "info@whoownsthezebra.be"
     },
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "codeat3/blade-carbon-icons": "^2.38",
         "filament/filament": "^4.0|^5.0",
-        "illuminate/contracts": "^11.0|^12.0",
+        "illuminate/contracts": "^12.0",
         "spatie/laravel-package-tools": "^1.12",
         "wotz/filament-link-picker": "^2.0"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
         "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^7.0|^8.0",
-        "orchestra/testbench": "^9.0|^10.0",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^10.0",
         "pestphp/pest": "^4.0",
         "pestphp/pest-plugin-laravel": "^4.0",
         "phpstan/extension-installer": "^1.4",
