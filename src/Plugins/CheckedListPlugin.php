@@ -2,6 +2,7 @@
 
 namespace Wotz\FilamentCustomTiptapExtensions\Plugins;
 
+use Filament\Actions\Action;
 use Filament\Forms\Components\RichEditor\Plugins\Contracts\RichContentPlugin;
 use Filament\Forms\Components\RichEditor\RichEditorTool;
 use Filament\Support\Facades\FilamentAsset;
@@ -49,7 +50,7 @@ class CheckedListPlugin implements RichContentPlugin
     }
 
     /**
-     * @return array<\Filament\Actions\Action>
+     * @return array<Action>
      */
     public function getEditorActions(): array
     {
