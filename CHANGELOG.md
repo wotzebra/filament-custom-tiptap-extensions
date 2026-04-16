@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v2.2.0 - 2026-04-16
+
+### What's Changed
+
+* Bump ramsey/composer-install from 3 to 4 by @dependabot[bot] in https://github.com/wotzebra/filament-custom-tiptap-extensions/pull/27
+* Bump dependabot/fetch-metadata from 2.5.0 to 3.0.0 by @dependabot[bot] in https://github.com/wotzebra/filament-custom-tiptap-extensions/pull/30
+* Add PHP 8.5 / Laravel 13 support by @Copilot in https://github.com/wotzebra/filament-custom-tiptap-extensions/pull/29
+
+### New Contributors
+
+* @Copilot made their first contribution in https://github.com/wotzebra/filament-custom-tiptap-extensions/pull/29
+
+**Full Changelog**: https://github.com/wotzebra/filament-custom-tiptap-extensions/compare/v2.1.0...v2.2.0
+
 ## v2.0.0 - 2026-01-20
 
 ### What's Changed
